@@ -68,12 +68,12 @@ function resetBall() {
   ball.speedX = -ball.speedX;
 }
 
-function userInputHandler(inputStream) {
-  if (inputStream['ArrowUp']) {
+function userInputHandler(event) {
+  if (event.key === 'ArrowUp') {
     paddle.y -= 10;
   }
 
-  if (inputStream['ArrowDown']) {
+  if (event.key === 'ArrowDown') {
     paddle.y += 10;
   }
 
@@ -86,4 +86,4 @@ function userInputHandler(inputStream) {
   }
 }
 
-export { gameLogic, userInputHandler };
+document.addEventListener('keydown', userInputHandler);
