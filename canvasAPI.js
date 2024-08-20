@@ -1,5 +1,5 @@
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
+canvas = document.getElementById('canvas');
+ctx = canvas.getContext('2d');
 
 let canvasWidth;
 let canvasHeight;
@@ -28,4 +28,4 @@ function handleInput() {
 
 initCanvas();
 
-export { renderGame, handleInput };
+// Removed export statements since we're not using modules anymore
