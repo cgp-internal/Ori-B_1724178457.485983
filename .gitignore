@@ -1,0 +1,11 @@
+node_modules/
+*.cache
+package-lock.json
+.run.sh
+style.css.map
+canvasAPI.js.map
+pong.js.map
+README.md.swp
+*.swp
+.vscode/
+.idea/
