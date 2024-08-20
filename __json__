@@ -1,0 +1,45 @@
+{
+    "index.html": {
+        "description": "Main entry point for the Pong game, including links to JavaScript and CSS files.",
+        "dependencies": {
+            "pong.js": [
+                "gameLogic",
+                "userInputHandler"
+            ],
+            "style.css": []
+        }
+    },
+    "pong.js": {
+        "description": "Contains the game logic, including scorekeeping, user controls, and basic game mechanics.",
+        "dependencies": {
+            "canvasAPI.js": [
+                "renderGame",
+                "handleInput"
+            ]
+        },
+        "exposes": [
+            "gameLogic",
+            "userInputHandler"
+        ]
+    },
+    "canvasAPI.js": {
+        "description": "Utilizes the Canvas API for game rendering and user input handling.",
+        "exposes": [
+            "renderGame",
+            "handleInput"
+        ]
+    },
+    "style.css": {
+        "description": "Contains CSS styles for the game interface and layout.",
+        "exposes": []
+    },
+    "README.md": {
+        "description": "README with basic documentation and 'how to run' guide"
+    },
+    ".gitignore": {
+        "description": ".gitignore with node-modules and cache files"
+    },
+    "run.sh": {
+        "description": "bash run script, should: install Node, init a project, open index.html in default browser"
+    }
+}
